@@ -6,3 +6,5 @@
 ## 下载
 git clone https://github.com/CSP1988/memoryGame.git
 
+## 预览（试玩）
+https://csp1988.github.io/memoryGame/
