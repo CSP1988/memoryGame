@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    
 }
 
 html,
@@ -32,6 +33,8 @@ h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
+
+
 
 /*
  * Styles for the deck of cards
@@ -91,6 +94,7 @@ h1 {
     margin-bottom: 10px;
 }
 
+
 .score-panel .stars {
     margin: 0;
     padding: 0;
@@ -106,4 +110,71 @@ h1 {
 .score-panel .restart {
     float: right;
     cursor: pointer;
+}
+
+.seconds {
+    margin-left: 70px;
+}
+
+.start1,.start2,.start3:before {
+    color: red;
+}
+
+/*.pass {
+    color: gray;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 9;
+    top: 0;
+    height: 1000px;
+}*/
+
+#modal-overlay {
+     visibility: hidden;    
+     position: absolute;   /* 使用绝对定位或固定定位  */
+     left: 0px;    
+     top: 0px;
+     width:100%;
+     height:100%;
+     text-align:center;
+     z-index: 1000;
+     background-color: rgba(255, 255, 255, 0.7); 
+     opacity: 0.7;   /* 背景半透明 */
+        }
+        /* 模态框样式 */
+.modal-data{
+     width:300px;
+     margin: 200px auto;
+     background-color: #02ccba;
+     border:1px solid #02ccba;
+     padding:20px;
+     text-align:center;
+}
+
+.overScore li{
+    list-style: none;
+    display: inline;
+    font-size: 28px;
+}
+
+.overtext {
+    font-size: 28px;
+}
+
+
+
+@media only screen and (max-width: 650px){
+     .deck .card {
+        width: 80px;
+        height: 80px;
+    }
+    .deck {
+        width: 450px;
+        min-height: 480px;
+    }
 }

@@ -5,7 +5,10 @@
     <title>Matching Game</title>
     <meta name="description" content="">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link  rel ="stylesheet" href ="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -17,70 +20,92 @@
 
         <section class="score-panel">
         	<ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
+        		<li class="startLi1"><i class="fa fa-star start1"></i></li>
+        		<li class="startLi2"><i class="fa fa-star start2"></i></li>
+        		<li class="startLi3"><i class="fa fa-star start3"></i></li>
         	</ul>
 
-        	<span class="moves">3</span> Moves
+        	<span class="moves">0</span> Moves
 
+            <span class="seconds">0</span> Seconds
             <div class="restart">
-        		<i class="fa fa-repeat"></i>
+        		<i class="fa fa-repeat btn"></i>
         	</div>
         </section>
 
         <ul class="deck">
             <li class="card">
-                <i class="fa fa-diamond"></i>
+                <i class=""></i>
             </li>
             <li class="card">
-                <i class="fa fa-paper-plane-o"></i>
-            </li>
-            <li class="card match">
-                <i class="fa fa-anchor"></i>
+                <i class=""></i>
             </li>
             <li class="card">
-                <i class="fa fa-bolt"></i>
+                <i class=""></i>
+            </li>
+            <li class="card ">
+                <i class=""></i>
             </li>
             <li class="card">
-                <i class="fa fa-cube"></i>
-            </li>
-            <li class="card match">
-                <i class="fa fa-anchor"></i>
+                <i class=""></i>
             </li>
             <li class="card">
-                <i class="fa fa-leaf"></i>
+                <i class=""></i>
             </li>
             <li class="card">
-                <i class="fa fa-bicycle"></i>
+                <i class=""></i>
             </li>
             <li class="card">
-                <i class="fa fa-diamond"></i>
+                <i class=""></i>
             </li>
             <li class="card">
-                <i class="fa fa-bomb"></i>
+                <i class=""></i>
             </li>
             <li class="card">
-                <i class="fa fa-leaf"></i>
+                <i class=""></i>
             </li>
             <li class="card">
-                <i class="fa fa-bomb"></i>
-            </li>
-            <li class="card open show">
-                <i class="fa fa-bolt"></i>
+                <i class=""></i>
             </li>
             <li class="card">
-                <i class="fa fa-bicycle"></i>
+                <i class=""></i>
             </li>
             <li class="card">
-                <i class="fa fa-paper-plane-o"></i>
+                <i class=""></i>
             </li>
             <li class="card">
-                <i class="fa fa-cube"></i>
+                <i class=""></i>
+            </li>
+            <li class="card">
+                <i class=""></i>
+            </li>
+            <li class="card">
+                <i class=""></i>
             </li>
         </ul>
-    </div>
 
+ <div id="modal-overlay"> 
+    <div class="modal-data">        
+        
+       <!--  <button>点击<a onclick="overlay()" href="">这里</a>关闭</button> -->
+
+       <section class="overScore">
+
+        <ul class="stars stars-num">
+            <li class="startLi1"><i class="fa fa-star start1"></i></li>
+            <li class="startLi2"><i class="fa fa-star start2"></i></li>
+            <li class="startLi3"><i class="fa fa-star start3"></i></li>
+        </ul>
+        </section>
+        <p class="overtext">恭喜您顺利通关!</p>
+        <p id="showTime"></p>
+            
+        
+        <button onclick="closeModal()" style="font-size: 18px"><em>在玩一次</em></button>
+    </div>
+</div>
+        
+    </div>
     <script src="js/app.js"></script>
 </body>
 </html>
